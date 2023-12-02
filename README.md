@@ -31,19 +31,19 @@ sudo apt-get install python3-catkin-tools
 - clone the repository
 
 ```bash
-git clone git@github.com:octobotics/Octobotics_Coding_Assignment.git
+git clone git@github.com:krrish-jindal/Inverted_Pendulum.git
 ```
 
 - navigate to the repository directory
 
 ```bash
-cd Octobotics_Coding_Assignment
+cd Inverted_Pendulum
 ```
 
 - build the project
 
 ```bash
-catkin build
+catkin_make
 ```
 - source the workspace
 
@@ -56,6 +56,28 @@ source devel/setup.bash
 ```bash
 roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
 ```
+#### Task 01
+- Initial Parameter Load
+```bash
+roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
+```
+#### Task 02
+- Force Controllled
+```bash
+roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
+```
+
+```bash
+rosrun inverted_pendulum_controller controller_node.py
+```
+
+#### Task 03
+- Inverted Pendulum
+```bash
+roslaunch inverted_pendulum_sim invert_pid.launch
+```
+
+
 
 ### Published Topics
 - /inverted_pendulum/current_state ([inverted_pendulum_sim/CurrentState](https://github.com/octobotics/Octobotics_Coding_Assignment/blob/main/src/inverted_pendulum_sim/msg/CurrentState.msg)) - Publishes the current state of the inverted pendulum at 100 Hz

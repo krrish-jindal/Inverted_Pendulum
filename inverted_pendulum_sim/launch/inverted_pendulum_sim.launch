@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <node pkg="inverted_pendulum_sim" type="inverted_pendulum_sim_node.py" name="InvertedPendulum" output="screen"
+          required="true">
+    <param name="x_dot" type="double" value="0.0"/>
+    <param name="x_d_dot" type="double" value="0.0"/>
+    <param name="theta" type="double" value="0.0"/>
+    <param name="theta_dot" type="double" value="0.0"/>
+    <param name="theta_d_dot" type="double" value="0.0"/>
+    <param name="length" type="double" value="300.0"/>
+    <param name="cart_m" type="double" value="0.5"/>
+    <param name="pendulum_m" type="double" value="2.0"/>
+    </node>
+    
+</launch>
